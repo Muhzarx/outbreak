@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <meta name="theme-color" content="#090d10">
+  <title>OUTBREAK — The Last Signal</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div id="game">
+    <div id="loading"><div class="loader"></div><p>INITIALIZING QUARANTINE ZONE</p></div>
+    <div id="vignette"></div>
+    <header id="topbar">
+      <div class="brand">OUTBREAK <span> / THE LAST SIGNAL</span></div>
+      <div class="objective"><span class="dot"></span><span id="objectiveText">OBJECTIVE: FIND 3 SIGNAL PARTS</span></div>
+    </header>
+    <section id="hud">
+      <div class="status">
+        <div class="status-label">VITALS <span id="healthValue">100</span>%</div>
+        <div class="bar"><div id="healthBar"></div></div>
+        <div class="status-label secondary">SIGNAL PARTS <span id="partsValue">0 / 3</span></div>
+      </div>
+      <div class="weapon">
+        <div class="weapon-name">M1911 <span>9MM</span></div>
+        <div class="ammo"><b id="ammoValue">12</b><span> / </span><span id="reserveValue">48</span></div>
+        <div class="weapon-hint">[R] RELOAD</div>
+      </div>
+    </section>
+    <div id="crosshair"><i></i><b></b></div>
+    <div id="toast"></div>
+    <div id="damageFlash"></div>
+    <div id="startScreen" class="screen">
+      <div class="screen-card">
+        <div class="eyebrow">A SURVIVAL HORROR EXPERIENCE</div>
+        <h1>OUT<span>BREAK</span></h1>
+        <p class="subtitle">THE LAST SIGNAL</p>
+        <p class="intro">The city went silent three days ago. Your radio picked up one final transmission from the evacuation point. Find the signal parts. Reach the extraction gate. Don't let them get close.</p>
+        <button id="startBtn">ENTER THE QUARANTINE ZONE</button>
+        <div class="controls-note">PC: WASD MOVE · MOUSE LOOK · LEFT CLICK FIRE · SHIFT SPRINT · R RELOAD · E INTERACT</div>
+      </div>
+    </div>
+    <div id="endScreen" class="screen hidden">
+      <div class="screen-card">
+        <div class="eyebrow" id="endEyebrow">MISSION REPORT</div>
+        <h2 id="endTitle">YOU SURVIVED</h2>
+        <p id="endText"></p>
+        <button id="restartBtn">PLAY AGAIN</button>
+      </div>
+    </div>
+    <div id="mobileControls">
+      <div id="stick"><div id="stickKnob"></div></div>
+      <div class="mobile-actions">
+        <button id="fireBtn">FIRE</button>
+        <button id="reloadBtn">R</button>
+        <button id="sprintBtn">RUN</button>
+        <button id="interactBtn">USE</button>
+      </div>
+    </div>
+    <div id="interactionHint">PRESS E TO INTERACT</div>
+    <footer id="footer"><span>QUARANTINE ZONE 07</span><span id="fpsLabel">WEBGL / THREE.JS</span></footer>
+  </div>
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>
