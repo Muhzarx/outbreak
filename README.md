@@ -6,10 +6,10 @@
 </p>
 
 <p align="center">
-  <a href="https://muhzarx.github.io/outbrea/">
+  <a href="https://muhzarx.github.io/outbreak/">
     <img src="https://img.shields.io/badge/🎮_PLAY_LIVE_DEMO-OUTBREAK-bb332d?style=for-the-badge" alt="Play Live Demo">
   </a>
-  <a href="https://github.com/Muhzarx/outbrea">
+  <a href="https://github.com/Muhzarx/outbreak">
     <img src="https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github" alt="GitHub Repository">
   </a>
 </p>
