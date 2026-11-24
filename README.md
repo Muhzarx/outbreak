@@ -1,75 +1,202 @@
-# OUTBREAK — The Last Signal
+# 🧟 OUTBREAK — The Last Signal
 
-A browser-based 3D survival-horror prototype built with **Three.js**. Designed for GitHub Pages and playable on desktop and mobile browsers.
+<p align="center">
+  <strong>A 3D Survival Horror Experience</strong><br>
+  Built with Three.js & WebGL
+</p>
 
-## Play online with GitHub Pages
+<p align="center">
+  <a href="https://muhzarx.github.io/outbrea/">
+    <img src="https://img.shields.io/badge/🎮_PLAY_LIVE_DEMO-OUTBREAK-bb332d?style=for-the-badge" alt="Play Live Demo">
+  </a>
+  <a href="https://github.com/Muhzarx/outbrea">
+    <img src="https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github" alt="GitHub Repository">
+  </a>
+</p>
 
-1. Create a new public repository on GitHub named `OUTBREAK` (or any name you prefer).
-2. Upload **all files and folders** from this project. Make sure `index.html` is in the repository root.
-3. Open **Settings → Pages**.
-4. Under **Build and deployment**, choose **Deploy from a branch**.
-5. Select branch `main` and folder `/ (root)`, then click **Save**.
-6. Wait for GitHub Pages to publish. Your game URL will look like:
-   `https://YOUR-USERNAME.github.io/OUTBREAK/`
+---
 
-No build step is required. Three.js is loaded from jsDelivr, so the browser needs an internet connection.
+## 🎮 About The Game
 
-## Controls
+**OUTBREAK: The Last Signal** is a browser-based 3D survival horror game inspired by modern survival horror experiences.
 
-### PC
+The city has fallen. An unknown infection has turned its population into aggressive creatures. Three days after the outbreak, a mysterious radio transmission offers one final chance of survival.
+
+Your mission is simple:
+
+- Explore the infected quarantine zone.
+- Collect three missing signal components.
+- Fight off infected creatures.
+- Manage your ammunition and health.
+- Reach the extraction gate and survive.
+
+**Will you make it out alive?**
+
+## ✨ Features
+
+- 🌆 3D Environment with atmospheric lighting and fog.
+- 🎥 Third-Person Camera System.
+- 🧟 Zombie AI with pursuit and attack behavior.
+- 🔫 Pistol Shooting and Reload Mechanics.
+- ❤️ Health and Damage System.
+- 🎒 Collectible Items and Supplies.
+- 📡 Mission Objectives and Extraction System.
+- 🖥️ Desktop Keyboard & Mouse Support.
+- 📱 Mobile Touchscreen Controls.
+- 🌐 Browser-Based Gameplay — No Installation Required.
+
+## 🕹️ Controls
+
+### PC / Laptop
+
 | Action | Control |
 |---|---|
-| Move | W A S D / Arrow keys |
-| Look | Mouse |
-| Aim / Fire | Left mouse button |
-| Sprint | Shift |
-| Reload | R |
-| Pick up / Extract | E |
-| Pause | Esc |
-
-Click the game to capture the mouse. Press Esc to release it and pause.
+| Move | `W A S D` |
+| Look Around | Mouse |
+| Shoot | Left Mouse Button |
+| Sprint | `SHIFT` |
+| Reload | `R` |
+| Interact / Pickup | `E` |
+| Pause | `ESC` |
 
 ### Mobile
-- Left virtual stick: move
-- Drag on the game view: look around
-- FIRE: shoot
-- R: reload
-- RUN: sprint
-- USE: pick up items / extract
 
-## Mission
+| Action | Control |
+|---|---|
+| Move | Virtual Joystick |
+| Look Around | Drag Screen |
+| Shoot | FIRE Button |
+| Reload | R Button |
+| Sprint | RUN Button |
+| Interact | USE Button |
 
-Recover all **3 signal parts** scattered around the quarantine district, then reach the extraction gate at the far end of the street. Collect ammunition and medical supplies, and avoid the infected.
+*Landscape orientation is recommended for mobile devices.*
 
-## Project structure
+## 🎯 Mission Objective
+
+1. Find all three signal components scattered throughout the city.
+2. Collect ammunition and medical supplies.
+3. Avoid or eliminate infected creatures.
+4. Reach the extraction gate.
+5. Survive and complete the mission.
+
+## 🛠️ Built With
+
+| Technology | Purpose |
+|---|---|
+| Three.js | 3D Rendering |
+| WebGL | Graphics Rendering |
+| JavaScript | Game Logic |
+| HTML5 | Game Structure |
+| CSS3 | User Interface |
+| GitHub Pages | Game Hosting |
+
+## 🚀 Play the Game
+
+No installation is required.
+
+1. Open the Live Demo.
+2. Wait for the game to initialize.
+3. Click **ENTER THE QUARANTINE ZONE**.
+4. Start exploring and surviving.
+
+<p align="center">
+  <a href="https://muhzarx.github.io/outbrea/">
+    <strong>▶ PLAY OUTBREAK NOW</strong>
+  </a>
+</p>
+
+## 📂 Project Structure
 
 ```text
-OUTBREAK/
+outbrea/
 ├── index.html
 ├── style.css
 ├── README.md
-├── src/
-│   └── main.js
-└── assets/
+├── .nojekyll
+├── assets/
+│   └── README.txt
+└── src/
+    └── main.js
 ```
 
-## Notes
+## ⚙️ Run Locally
 
-- This is an original, playable vertical-slice prototype. It uses procedural primitive geometry rather than licensed Resident Evil assets.
-- Visual quality and performance depend on the player's device and browser.
-- For best desktop experience, use a recent Chromium, Firefox, or Safari browser with WebGL enabled.
-- For mobile, use a modern browser and landscape orientation.
-- Three.js is imported as an ES module from jsDelivr. For fully offline hosting, vendor the Three.js library into the repository and update the import path.
+Clone this repository:
 
-## Roadmap
+```bash
+git clone https://github.com/Muhzarx/outbrea.git
+```
 
-- Character and infected animation rigs
-- Improved pathfinding and enemy archetypes
-- More detailed environment and interior locations
-- Audio design, ambience, and spatial sound
-- Inventory screen, weapon switching, and save checkpoints
-- Story scenes and additional chapters
+Enter the project directory:
 
-## License
+```bash
+cd outbrea
+```
 
-Code in this repository may be adapted for personal and educational projects. Third-party libraries and assets retain their respective licenses.
+Start a local development server:
+
+```bash
+python -m http.server 8000
+```
+
+Open your browser:
+
+```text
+http://localhost:8000
+```
+
+## 🌐 Deployment
+
+This project is designed to run on GitHub Pages.
+
+To enable deployment:
+
+1. Open repository Settings.
+2. Navigate to Pages.
+3. Select **Deploy from a branch**.
+4. Choose `main` as the branch.
+5. Select `/ (root)` as the folder.
+6. Click Save.
+
+Your game will be available at:
+
+`https://muhzarx.github.io/outbrea/`
+
+## 🗺️ Development Roadmap
+
+- [x] Initial 3D environment
+- [x] Third-person movement
+- [x] Zombie enemy system
+- [x] Shooting and reload mechanics
+- [x] Health and ammunition system
+- [x] Mission objectives
+- [x] PC and mobile controls
+- [ ] Advanced character animations
+- [ ] More realistic zombie models
+- [ ] Additional weapons
+- [ ] Boss encounters
+- [ ] Story cutscenes
+- [ ] Additional chapters and locations
+
+## ⚠️ Project Status
+
+OUTBREAK is currently an early playable prototype.
+
+The game is continuously being developed, with future updates planned for improved graphics, animations, enemy behavior, sound design, and gameplay mechanics.
+
+## 📜 License
+
+Created as an independent survival horror game project.
+
+Inspired by the survival horror genre. OUTBREAK is an original project and is not affiliated with or endorsed by Capcom or Resident Evil.
+
+---
+
+<p align="center">
+  **OUTBREAK — THE LAST SIGNAL**
+  <br>
+  <i>Find the signal. Fight the infected. Survive.</i>
+  <br><br>
+  Made with ❤️ by <a href="https://github.com/Muhzarx">Muhzarx</a>
+</p>
